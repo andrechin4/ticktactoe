@@ -1,0 +1,331 @@
+<html>
+<head>
+	<title>TicTacToe</title>
+</head>
+<center>
+	<body>
+		<table>
+			<tr>
+				<td><img src="blank.JPG" name="pic1" id="1" onClick="btn1()"></td>
+				<td><img src="blank.JPG" name="pic2" id="2" onClick="btn2()"></td>
+				<td><img src="blank.JPG" name="pic3" id="3" onClick="btn3()"></td>
+			</tr>
+			<tr>
+				<td><img src="blank.JPG" name="pic4" id="4" onClick="btn4()"></td>
+				<td><img src="blank.JPG" name="pic5" id="5" onClick="btn5()"></td>
+				<td><img src="blank.JPG" name="pic6" id="6" onClick="btn6()"></td>
+			</tr>
+			<tr>
+				<td><img src="blank.JPG" name="pic7" id="7" onClick="btn7()"></td>
+				<td><img src="blank.JPG" name="pic8" id="8" onClick="btn8()"></td>
+				<td><img src="blank.JPG" name="pic9" id="9" onClick="btn9()"></td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+<script>
+
+//Make one tile change images
+//Make all tiles change images
+//Make tiles change when the button is clicked.
+//Make it change from x to o.
+//Make a way to win and lose
+//Make the game tell who won and who lost.
+
+
+// There are 8 different ways that a person can win in Tick Tac Toe
+//If each place is filled, and there isn't any connections, than it's a tie
+
+
+var playerTurn = true
+
+var btnClicked1 = false
+var btnClicked2 = false
+var btnClicked3 = false
+var btnClicked4 = false
+var btnClicked5 = false
+var btnClicked6 = false
+var btnClicked7 = false
+var btnClicked8 = false
+var btnClicked9 = false
+
+var btncon1 = 0
+var btncon2 = 0
+var btncon3 = 0
+var btncon4 = 0
+var btncon5 = 0
+var btncon6 = 0
+var btncon7 = 0
+var btncon8 = 0
+var btncon9 = 0
+
+
+var gamewin = false
+
+
+
+
+function btn1(){
+
+	if (btnClicked1 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("1").src = "o.jpg"
+			playerTurn = false
+			btnClicked1 = true
+			btncon1 = 1
+			checkWinner()
+		} else {o.jpg
+			document.getElementById("1").src = "x.jpg"
+			playerTurn = true
+			btnClicked1 = true
+			btncon1 = 2
+			checkWinner()
+		}
+	} else {
+
+	}
+}
+
+function btn2(){
+
+	if (btnClicked2 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("2").src = "o.jpg"
+			playerTurn = falsex
+			btnClicked2 = true
+			btncon2 = 1
+			checkWinner()
+		} else {
+			document.getElementById("2").src = "x.jpg"
+			playerTurn = true
+			btnClicked2 = true
+			btncon2 = 2
+			checkWinner()
+		}
+	} else {
+		
+	}
+}
+
+function btn3(){
+
+	if (btnClicked3 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("3").src = "o.jpg"
+			playerTurn = false
+			btnClicked3 = true
+			btncon3 = 1
+			checkWinner()
+		} else {
+			document.getElementById("3").src = "x.jpg"
+			playerTurn = true
+			btnClicked3 = true
+			btncon3 = 2
+			checkWinner()
+		}
+	} else {
+		
+	}
+}
+
+function btn4(){
+
+	if (btnClicked4 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("4").src = "o.jpg"
+			playerTurn = false
+			btnClicked4 = true
+			btncon4 = 1
+			checkWinner()
+		} else {
+			document.getElementById("4").src = "x.jpg"
+			playerTurn = true
+			btnClicked4 = true
+			btncon4 = 2
+			checkWinner()
+		}
+	} else {
+		
+	}
+}
+
+function btn5(){
+
+	if (btnClicked5 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("5").src = "o.jpg"
+			playerTurn = false
+			btnClicked1 = true
+			btncon5 = 1
+			checkWinner()
+		} else {
+			document.getElementById("5").src = "x.jpg"
+			playerTurn = true
+			btnClicked5 = true
+			btncon5 = 2
+			checkWinner()
+		}
+	} else {
+		
+	}
+}
+
+function btn6(){
+
+	if (btnClicked6 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("6").src = "o.jpg"
+			playerTurn = false
+			btnClicked6 = true
+			btncon6 = 1
+			checkWinner()
+		} else {
+			document.getElementById("6").src = "x.jpg"
+			playerTurn = true
+			btnClicked6 = true
+			btncon6 = 2
+			checkWinner()
+		}
+	} else {
+		
+	}
+}
+
+function btn7(){
+
+	if (btnClicked7 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("7").src = "o.jpg"
+			playerTurn = false
+			btnClicked7 = true
+			btncon7 = 1
+			checkWinner()
+		} else {
+			document.getElementById("7").src = "x.jpg"
+			playerTurn = true
+			btnClicked7 = true
+			btncon7 = 2
+			checkWinner()
+		}
+	} else {
+		
+	}
+}
+
+function btn8(){
+
+	if (btnClicked8 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("8").src = "o.jpg"
+			playerTurn = false
+			btnClicked8 = true
+			btncon8 = 1
+			checkWinner()
+		} else {
+			document.getElementById("8").src = "x.jpg"
+			playerTurn = true
+			btnClicked8 = true
+			btncon8 = 2
+			checkWinner()
+		}
+	} else {
+		
+	}
+}
+
+function btn9(){
+
+	if (btnClicked9 == false) {
+
+		if (playerTurn == true) {
+			document.getElementById("9").src = "o.jpg"
+			playerTurn = false
+			btnClicked9 = true
+			btncon9 = 1
+			checkWinner()
+		} else {
+			document.getElementById("9").src = "x.jpg"
+			playerTurn = true
+			btnClicked9 = true
+			btncon9 = 2
+			checkWinner()
+		}
+	} else {
+		
+	}
+}
+
+
+function checkWinner(){
+
+	if (btncon1 == 1 && btncon2 == 1 && btncon3 == 1){
+		alert("The winner is o!")
+	}
+	else if (btncon4 == 1 && btncon5 == 1 && btncon6 == 1){
+		alert("The winner is o!")
+	}
+	else if (btncon7 == 1 && btncon8 == 1 && btncon9 == 1){
+		alert("The winner is o!")
+	}
+	else if (btncon1 == 1 && btncon4 == 1 && btncon7 == 1){
+		alert("The winner is o!")
+	} 
+	else if (btncon2 == 1 && btncon5 == 1 && btncon8 == 1){
+		alert("The winner is o!")
+	} 
+	else if (btncon3 == 1 && btncon6 == 1 && btncon9 == 1){
+		alert("The winner is o!")
+	} 
+	else if (btncon1 == 1 && btncon5 == 1 && btncon9 == 1){
+		alert("The winner is o!")
+	} 
+	else if (btncon3 == 1 && btncon5 == 1 && btncon7 == 1){
+		alert("The winner is o!")
+	} 
+	else if (btncon1 == 2 && btncon2 == 2 && btncon3 == 2){
+		alert("The winner is x!")
+	} 
+	else if (btncon4 == 2 && btncon5 == 2 && btncon6 == 2){
+		alert("The winner is x!")
+	}
+	else if (btncon7 == 2 && btncon8 == 2 && btncon9 == 2){
+		alert("The winner is x!")
+	}
+	else if (btncon1 == 2 && btncon4 == 2 && btncon7 == 2){
+		alert("The winner is x!")
+	} 
+	else if (btncon2 == 2 && btncon5 == 2 && btncon8 == 2){
+		alert("The winner is x!")
+	} 
+	else if (btncon3 == 2 && btncon6 == 2 && btncon9 == 2){
+		alert("The winner is x!")
+	} 
+	else if (btncon1 == 2 && btncon5 == 2 && btncon9 == 2){
+		alert("The winner is x!")
+	} 
+	else if (btncon3 == 2 && btncon5 == 2 && btncon7 == 2){
+		alert("The winner is x!")
+	} else {
+
+	}
+
+	if (btnClicked1 == true && btnClicked2 == true && btnClicked3 == true && btnClicked4 == true && btnClicked5 == true && btnClicked6 == true && btnClicked7 == true && btnClicked8 == true && btnClicked9 == true){
+		alert("There was a tie! There is no winner")
+	}
+
+}
+
+
+
+</script>
+</html>
+
